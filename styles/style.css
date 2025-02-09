@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Moderustic:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     background-color: #163950;
+    font-family: moderustic;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 header{
     background-color: white;
+    font-family: goldman;
 }
 
 nav a:hover{
@@ -14,11 +25,19 @@ nav a:hover{
 .msg{
     background-color: white;
     color: #0f5727;
+    font-family: moderustic;
+    font-size: 1.5em;
+    padding: 35px;
+    line-height: 1.5em;
 }
 
 .msg h2, .msg p{
     background-color: white;
     color: #0f5727;
+    font-family: moderustic;
+    font-size: .8em;
+    padding-bottom: 15px;
+
 }
 
 #content {
@@ -32,6 +51,7 @@ nav a{
     text-align: center;
     color: #163950;
     text-decoration: none; 
+    padding: 35px;
  }
 
 .book,.join{
@@ -39,6 +59,10 @@ nav a{
     background-color: #163950;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -48,6 +72,7 @@ nav a{
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
+    font-family: goldman;
 
 }
 
@@ -64,6 +89,8 @@ main section{
 
 footer{
     background-color: #163950;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 #background {
@@ -77,17 +104,27 @@ h4{
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo{
 
     width: 80px;
+
 }
+
+#logo_link{
+
+    padding-top: 5px;
+
+}
+
 footer p a{
     background-color: #163950;
     color: white;
     text-decoration: none;
 }
+
 footer p{
     font-size: 1.2em;
     color: white;
@@ -100,7 +137,10 @@ footer p{
 } 
 .home-title{
 
-    color:#163950
+    color: #163950;
+    font-family: goldman;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 footer p a:hover{
@@ -114,7 +154,27 @@ footer:hover{
     text-decoration: none;
 }
 
+
 main section h2{
     background-color: white;
     color: #0f5727;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #163950;
+}
+
+main section img{
+
+    box-sizing: border-box;
+}
+
+footer .social image{
+
+    padding-top: 15px;
 }
