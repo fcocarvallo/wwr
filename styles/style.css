@@ -114,14 +114,6 @@ nav a:hover{
     box-shadow: 5px 5px 10px #7dc431;
 }
 
-/* .msg h2, .msg p{
-    background-color: white;
-    color: #0f5727;
-    font-family: moderustic;
-    font-size: .8em;
-    padding-bottom: 15px;
-
-} */
 
 
 .msg h2{
@@ -156,7 +148,7 @@ nav a{
 
 .book,.join{
 
-    background-color: #163950;
+    background-color: #0056b3;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -167,8 +159,8 @@ nav a{
 
 .book:hover, .join:hover{
 
-    background-color: white;
-    color: #163950;
+    background-color: #007BFF;
+    color: white;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
@@ -290,6 +282,186 @@ main section img{
 footer .social image{
 
     padding-top: 15px;
+}
+
+#inspire {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#inspire-box {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 15px auto;
+    border: 5px solid #3386c1;
+    padding: 15px;
+    background-color: white;
+}
+
+#inspire-img {
+    width: 50%;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+#inspire h1{
+    width: 100%;
+    text-align: right;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#inspire-msg{
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+    color: #0f5727;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    
+}
+
+#inspire-msg p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #163950;
+}
+
+
+
+
+
+
+
+
+.subcategory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.rafting-adv-card,
+.camping-adv-card,
+.course-adv-card {
+    background-color: white;
+    border: 4px solid #3386c1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Ensure the box takes full height */
+}
+
+.card-img {
+    width: 90%; /* Make the image take up the full width of the card */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top:15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    padding-top: 20px;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allow the paragraph to grow and push the button down */
+}
+
+.card-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add space between the paragraph and the button */
+}
+
+.card-button:hover {
+    background-color: #007BFF;
+}
+
+
+
+
+
+
+
+/* Gallery Section */
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8; /* Light background for the gallery */
+    margin-top: 60px;
+    margin: auto;
+    max-width: 95%;
+    border: solid white;
+    border-radius: 5px;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #0f5727;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+
+
+.page2-footer {
+    background-color: #163950;
+    padding-top: 5px;
+    margin-top: 20px; /* Adjust this value to reduce the gap */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .subcategory-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 900px) {
