@@ -334,13 +334,13 @@ footer .social image{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%; /* Ensure the box takes full height */
+    height: 100%; 
 }
 
 .card-img {
-    width: 90%; /* Make the image take up the full width of the card */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    width: 90%; 
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 10px;
     margin-bottom: 15px;
     margin-top:15px;
@@ -357,7 +357,7 @@ p {
     font-size: 1em;
     color: #666;
     margin-bottom: 20px;
-    flex-grow: 1; /* Allow the paragraph to grow and push the button down */
+    flex-grow: 1; 
 }
 
 .card-button {
@@ -368,7 +368,7 @@ p {
     border-radius: 5px;
     font-size: 1em;
     transition: background-color 0.3s;
-    margin-top: 20px; /* Add space between the paragraph and the button */
+    margin-top: 20px; 
 }
 
 .card-button:hover {
@@ -381,11 +381,11 @@ p {
 
 
 
-/* Gallery Section */
+
 .gallery {
     padding: 40px 20px;
     text-align: center;
-    background-color: #f8f8f8; /* Light background for the gallery */
+    background-color: #f8f8f8; 
     margin-top: 60px;
     margin: auto;
     max-width: 95%;
@@ -418,8 +418,8 @@ p {
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -427,11 +427,103 @@ p {
 .page2-footer {
     background-color: #163950;
     padding-top: 5px;
-    margin-top: 20px; /* Adjust this value to reduce the gap */
+    margin-top: 20px; 
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
+/* Contact us: Start Here */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; 
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+form button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%; 
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;      
+}
+
+
+.moveDown {
+    margin-top: 3em;
+}
+
+
+form p.button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
 
 @media (max-width: 768px) {
     .subcategory-grid {
